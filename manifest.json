@@ -1,0 +1,29 @@
+{
+  "api_version": 1,
+  "widget_settings": [
+    {
+      "form_data": {
+        "currency": {
+          "type": "input",
+          "data_type": "radio",
+          "ErrorHandle": "Choose one or more currencies.",
+          "name": "Show price in currency",
+          "position_num": 3,
+          "labels": {
+            "USD": "US Dollar",
+            "GBP": "British Pounds",
+            "EUR": "Euro"
+          }
+        }
+      }
+    }
+  ],
+  "data_processors": [
+    {
+      "data_parser": "widget.js"
+    }
+  ],
+  "data_source": {
+    "url": "https://api.coindesk.com/v1/bpi/currentprice.json"
+  }
+}
